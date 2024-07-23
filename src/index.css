@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0.8em 0; /* Set consistent margin for headings */
+  font-size: 1.5rem;
+  font-weight: normal; /* Reset default bold weight */
+}
+
+p {
+  line-height: 1.5; /* Improve readability with line-height */
+  margin: 0.5em 0; /* Set some margin for paragraphs */
+}
+
+a {
+  text-decoration: none; /* Remove default underline on links */
+  color: inherit; /* Inherit default text color */
+}
+
+ul,
+ol {
+  margin: 0; /* Reset default margin and padding */
+  padding: 0;
+  list-style: none; /* Remove default list style */
+}

@@ -8,6 +8,16 @@
   align-items: center;
   gap: 8px;
 }
+
+.nav-bar .logo .camera {
+  font-size: 2rem;
+  color: rgb(196, 6, 6);
+}
+.nav-bar .logo h1 {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: rgb(115, 121, 120);
+}
 .navbar-navlinks,
 .navbar-navlinks ul {
   width: 300px;
@@ -15,5 +25,18 @@
   justify-content: space-between;
   align-items: center;
 }
-.nav-bar .logo button {
+.nav-bar .login button {
+  background-color: black;
+  padding: 10px;
+  width: 80px;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+hr {
+  border: none;
+  height: 1px; /* Set line thickness */
+  background-color: #252525; /* Set color */
+  margin: 0; /* Set margin */
 }

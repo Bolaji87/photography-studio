@@ -1,0 +1,45 @@
+#hero {
+  /* margin-top: 40px; */
+  width: 100%;
+  /* height: 100%; */
+  height: 100vh;
+
+  display: flex;
+  padding: 0 130px;
+
+  background-image: url("/src/assets/slacrane/slacrane-2.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+
+  color: white;
+  background-size: inherit;
+  background-position: center;
+
+  /* background-attachment: fixed; Parallax effect */
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(66, 60, 60, 0.3); /* Overlay color */
+  /* z-index: 1; */
+}
+
+.hero-display-text {
+  position: absolute;
+  bottom: 300px;
+  left: 150px;
+}
+.hero-display-text h1 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.hero-display-text button {
+  display: block;
+  border: none;
+  height: 35px;
+  width: 150px;
+}

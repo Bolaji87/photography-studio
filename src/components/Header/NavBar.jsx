@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCamera } from "react-icons/bs";
-
+import { Link } from "react-router-dom";
 import "./nav-bar.css";
 
 function NavBar() {
@@ -14,22 +14,22 @@ function NavBar() {
         <nav className="navbar-navlinks">
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#">Services</a>
+              <Link to={"/services"}>Services</Link>
             </li>
             <li>
-              <a href="#">Book a session</a>
+              <Link to="/portfolio">Portfolio</Link>
             </li>
           </ul>
         </nav>
         <div className="login">
           <button>
-            <a href="#">Login</a>
+            <Link to="#">Login</Link>
           </button>
         </div>
       </header>

@@ -1,0 +1,30 @@
+.album-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.album-cont h1 {
+  font-size: 1.2rem;
+  color: brown;
+  font-weight: bold;
+}
+.albums-images ul {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 15px;
+}
+.list-images {
+  width: 410px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 15px;
+}
+.list-images img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}

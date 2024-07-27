@@ -49,6 +49,7 @@ p {
   top: 20px;
   border-radius: 10px;
   margin-bottom: 0;
+  display: none;
 }
 #hero h1 {
   font-size: 1.6rem;
@@ -59,7 +60,7 @@ p {
 }
 
 .hero-btn {
-  margin-top: 8px;
+  margin-top: 28px;
   width: 200px;
   height: 45px;
   border: none;

@@ -25,6 +25,9 @@ function NavBar() {
             <li>
               <Link to="/portfolio">Portfolio</Link>
             </li>
+            <li>
+              <Link>About</Link>
+            </li>
           </ul>
         </nav>
         <div className="login">

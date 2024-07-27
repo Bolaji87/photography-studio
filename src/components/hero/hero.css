@@ -43,11 +43,12 @@ p {
   margin-right: -150px;
 }
 .hero-image img {
-  height: 600px;
+  height: 621px;
   object-fit: cover;
   position: absolute;
   top: 20px;
   border-radius: 10px;
+  margin-bottom: 0;
 }
 #hero h1 {
   font-size: 1.6rem;

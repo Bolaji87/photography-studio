@@ -29,7 +29,7 @@ function NavBar() {
         </nav>
         <div className="login">
           <button>
-            <Link to="#">Login</Link>
+            <Link to="login">Login</Link>
           </button>
         </div>
       </header>

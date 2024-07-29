@@ -115,7 +115,10 @@ function About() {
           <a href="mailto:email@example.com">email@example.com</a> or call us at
           <a href="tel:+1234567890"> [Phone Number]</a>. You can also follow us
           on {""}
-          <a href="#" id="contact-on-ig">
+          <a
+            href="https://www.instagram.com/slacrane_shotit/"
+            id="contact-on-ig"
+          >
             instagram
           </a>{" "}
           to see our latest work and updates.

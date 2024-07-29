@@ -4,39 +4,67 @@ import "./login.css";
 function Login() {
   const [haveAccount, setHaveAccount] = useState(true);
 
+  function handleHaveAccount() {
+    setHaveAccount(false);
+  }
+  function handleDontHaveAccount() {
+    setHaveAccount(true);
+  }
   return (
-    <>
+    <div className="login-page-cont">
       {haveAccount ? (
-        <div className="login-page">
-          <form action="" className="login-form">
-            <input
-              type="email"
-              id="email-login"
-              placeholder="input your email"
-            />
-            <input type="password" placeholder="*******" />
-            <span className="forgot-password">
-              <a href="#">forgot password?</a>
-            </span>
-            <button>Login</button>
-          </form>
-        </div>
+        <LoginPage onHaveAccount={handleHaveAccount} />
       ) : (
-        <SignUp />
+        <SignUpPage onDontHaveAccount={handleDontHaveAccount} />
       )}
-    </>
-  );
-}
-
-function SignUp() {
-  return (
-    <div className="sign-up">
-      <input type="text" placeholder="surName" />
-      <input type="text" placeholder="lastName" />
-      <input type="email" placeholder="email@.com" />
-      <input type="password" placeholder="password" />
-      <input type="password" placeholder="confirm password" />
     </div>
   );
 }
+
+function LoginPage({ onHaveAccount }) {
+  return (
+    <form action="" className="login-form">
+      <input type="email" id="email-login" placeholder="input your email" />
+      <input type="password" placeholder="*******" />
+      <span className="forgot-password">
+        <a href="#">forgot password?</a>
+      </span>
+      <button>Login</button>
+
+      <p className="dont-have-acct">
+        Don't have an account?{" "}
+        <a href="#" role="button" onClick={onHaveAccount}>
+          {" "}
+          Sign Up
+        </a>
+      </p>
+    </form>
+  );
+}
+function SignUpPage({ onDontHaveAccount }) {
+  return (
+    <div className="sign-up-form">
+      <form>
+        <span htmlFor="surname">Surname</span>
+        <input id="surname" type="text" placeholder="surname" />
+        <span htmlFor="lastname">Lastname</span>
+        <input id="lastname" type="text" placeholder="lastname" />
+        <span htmlFor="email">Email</span>
+        <input id="email" type="email" placeholder="email@.com" />
+        <span htmlFor="password">Password</span>
+        <input id="password" type="password" placeholder="password" />
+        <span htmlFor="confirm">Confirm Password</span>
+        <input id="confirm" type="password" placeholder="confirm password" />
+      </form>
+      <button>Sign Up</button>
+      <span className="already-have-acct">
+        Already have an account?{" "}
+        <a href="#" role="button" onClick={onDontHaveAccount}>
+          Login
+        </a>
+      </span>
+    </div>
+  );
+}
+
 export default Login;

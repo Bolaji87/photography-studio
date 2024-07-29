@@ -1,4 +1,4 @@
-.login-page {
+.login-page-cont {
   height: 100dvh;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   background-color: rgb(224, 206, 206);
 }
 .login-form {
-  height: 300px;
+  height: 350px;
   width: 450px;
   display: flex;
   flex-direction: column;
@@ -50,4 +50,54 @@
   color: blue;
   cursor: pointer;
   /* text-decoration: underline; */
+}
+.dont-have-acct a {
+  display: inline-block;
+  text-align: center;
+  color: blue;
+}
+.sign-up-form {
+  height: 400px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  padding-bottom: 15px;
+}
+.sign-up-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sign-up-form form span {
+  text-align: center;
+}
+.sign-up-form input {
+  height: 35px;
+  width: 400px;
+  border: 1px solid rgb(142, 148, 155);
+  border-radius: 8px;
+  padding: 8px;
+}
+.sign-up-form input::placeholder {
+  padding: 8px;
+  font-size: 16px;
+}
+.sign-up-form button {
+  width: 400px;
+  height: 35px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+.sign-up-form .already-have-acct a {
+  display: inline-block;
+  color: blue;
 }

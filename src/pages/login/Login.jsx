@@ -22,10 +22,33 @@ function Login() {
 }
 
 function LoginPage({ onHaveAccount }) {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  function handlesubmitLogin(e) {
+    e.preventDefault();
+
+    if (!email && !password) return;
+
+    setEmail("");
+    setPassword("");
+  }
+
   return (
-    <form action="" className="login-form">
-      <input type="email" id="email-login" placeholder="input your email" />
-      <input type="password" placeholder="*******" />
+    <form onSubmit={handlesubmitLogin} action="" className="login-form">
+      <input
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        type="email"
+        id="email-login"
+        placeholder="input your email"
+      />
+      <input
+        value={password}
+        onChange={(e) => setPassword(Number(e.target.value))}
+        type="password"
+        placeholder="*******"
+      />
       <span className="forgot-password">
         <a href="#">forgot password?</a>
       </span>
@@ -42,21 +65,67 @@ function LoginPage({ onHaveAccount }) {
   );
 }
 function SignUpPage({ onDontHaveAccount }) {
+  const [surname, setSurname] = useState("");
+  const [lastname, setLastname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+
+  function handleSubmitSignIn(e) {
+    e.preventDefault();
+
+    setSurname("");
+    setLastname("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
+  }
+
   return (
     <div className="sign-up-form">
-      <form>
+      <form onSubmit={handleSubmitSignIn}>
         <span htmlFor="surname">Surname</span>
-        <input id="surname" type="text" placeholder="surname" />
+        <input
+          value={surname}
+          onChange={(e) => setSurname(e.target.value)}
+          id="surname"
+          type="text"
+          placeholder="surname"
+        />
         <span htmlFor="lastname">Lastname</span>
-        <input id="lastname" type="text" placeholder="lastname" />
+        <input
+          value={lastname}
+          onChange={(e) => setLastname(e.target.value)}
+          id="lastname"
+          type="text"
+          placeholder="lastname"
+        />
         <span htmlFor="email">Email</span>
-        <input id="email" type="email" placeholder="email@.com" />
+        <input
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          id="email"
+          type="email"
+          placeholder="email@.com"
+        />
         <span htmlFor="password">Password</span>
-        <input id="password" type="password" placeholder="password" />
+        <input
+          value={password}
+          onChange={(e) => setPassword(Number(e.target.value))}
+          id="password"
+          type="password"
+          placeholder="password"
+        />
         <span htmlFor="confirm">Confirm Password</span>
-        <input id="confirm" type="password" placeholder="confirm password" />
+        <input
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(Number(e.target.value))}
+          id="confirm"
+          type="password"
+          placeholder="confirm password"
+        />
       </form>
-      <button>Sign Up</button>
+      <button onClick={handleSubmitSignIn}>Sign Up</button>
       <span className="already-have-acct">
         Already have an account?{" "}
         <a href="#" role="button" onClick={onDontHaveAccount}>

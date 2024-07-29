@@ -1,0 +1,155 @@
+.about-container {
+  padding: 4px 150px;
+}
+.about-header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-header h1 {
+  text-transform: uppercase;
+}
+.about-header p {
+  line-height: 1.5;
+}
+.about-philosophy {
+  margin-top: -10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#team {
+  margin-top: 4px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+.team-member {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  height: 500px;
+}
+.lead-photographer-img {
+  width: 500px;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.team-member div {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.team-member div h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: teal;
+}
+.team-member div p strong {
+  margin-bottom: 50px;
+  color: rgb(70, 139, 148);
+}
+.team-member div p {
+  line-height: 1.5;
+}
+.team1-member {
+  margin-top: 20px;
+  height: 450px;
+  padding: 10px 15px;
+  display: flex;
+  gap: 60px;
+}
+
+.team1-member img {
+  width: 500px;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.team1-member div {
+  width: 400px;
+}
+.team1-member div h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+  color: teal;
+}
+.team1-member div p strong {
+  /* margin-bottom: 50px; */
+  color: rgb(70, 139, 148);
+}
+.team1-member div p {
+  line-height: 1.5;
+}
+.our-services {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.our-services h2 {
+  font-size: 22px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(206, 61, 61);
+  color: teal;
+}
+.our-services strong {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(70, 139, 148);
+}
+.our-studio {
+  line-height: 2;
+  /* width: 800px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 190px;
+}
+.our-studio h2 {
+  font-size: 21px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(190, 224, 127);
+  margin-bottom: 0;
+}
+.testimony {
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 180px;
+}
+.testimony h2 {
+  font-size: 21px;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(190, 224, 127);
+  margin-bottom: 0;
+}
+.get-in-touch h2 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bolder;
+  color: maroon;
+}
+#contact-on-ig {
+  color: blue;
+  display: inline-block;
+  font-style: italic;
+  font-size: 18px;
+}

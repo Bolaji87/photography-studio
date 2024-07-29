@@ -15,6 +15,9 @@ function Login() {
               placeholder="input your email"
             />
             <input type="password" placeholder="*******" />
+            <span className="forgot-password">
+              <a href="#">forgot password?</a>
+            </span>
             <button>Login</button>
           </form>
         </div>

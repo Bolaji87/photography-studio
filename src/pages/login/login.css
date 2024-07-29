@@ -40,5 +40,14 @@
   border: none;
   border-radius: 8px;
   background-color: rgb(32, 30, 30);
+  cursor: pointer;
   color: white;
+}
+.forgot-password {
+  display: inline-block;
+}
+.forgot-password a {
+  color: blue;
+  cursor: pointer;
+  /* text-decoration: underline; */
 }

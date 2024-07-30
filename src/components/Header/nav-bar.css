@@ -23,12 +23,39 @@
 .navbar-navlinks,
 .navbar-navlinks ul {
   width: 300px;
+  gap: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.nav-bar .navbar-navlinks li {
+  /* background-color: rgb(160, 160, 165); */
+
+  background: linear-gradient(to right, rgb(190, 39, 65), rgb(0, 45, 128));
+  background: linear-gradient(to right, rgb(26, 23, 24), rgb(42, 42, 43));
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+}
+.nav-bar .navbar-navlinks li:hover {
+  background-color: teal;
+  background: linear-gradient(to right, rgb(226, 219, 219), rgb(223, 217, 217));
+
+  color: #252525;
+  padding: 10px;
+  border-radius: 8px;
+}
 .nav-bar .login button {
-  background-color: black;
+  background-color: rgb(117, 30, 30);
+  padding: 10px;
+  width: 80px;
+  border: none;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.nav-bar .login button:hover {
+  background-color: rgb(182, 21, 15);
   padding: 10px;
   width: 80px;
   border: none;

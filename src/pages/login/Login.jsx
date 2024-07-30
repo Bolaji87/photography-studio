@@ -84,7 +84,7 @@ function SignUpPage({ onDontHaveAccount }) {
   return (
     <div className="sign-up-form">
       <form onSubmit={handleSubmitSignIn}>
-        <span htmlFor="surname">Surname</span>
+        {/* <span htmlFor="surname">Surname</span> */}
         <input
           value={surname}
           onChange={(e) => setSurname(e.target.value)}
@@ -92,7 +92,7 @@ function SignUpPage({ onDontHaveAccount }) {
           type="text"
           placeholder="surname"
         />
-        <span htmlFor="lastname">Lastname</span>
+        {/* {/* <span htmlFor="lastname">Lastname</span> */}
         <input
           value={lastname}
           onChange={(e) => setLastname(e.target.value)}
@@ -100,7 +100,7 @@ function SignUpPage({ onDontHaveAccount }) {
           type="text"
           placeholder="lastname"
         />
-        <span htmlFor="email">Email</span>
+        {/* {/* <span htmlFor="email">Email</span> */}
         <input
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -108,7 +108,7 @@ function SignUpPage({ onDontHaveAccount }) {
           type="email"
           placeholder="email@.com"
         />
-        <span htmlFor="password">Password</span>
+        {/* {/* <span htmlFor="password">Password</span> */}
         <input
           value={password}
           onChange={(e) => setPassword(Number(e.target.value))}
@@ -116,7 +116,7 @@ function SignUpPage({ onDontHaveAccount }) {
           type="password"
           placeholder="password"
         />
-        <span htmlFor="confirm">Confirm Password</span>
+        {/* {/* <span htmlFor="confirm">Confirm Password</span> */}
         <input
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(Number(e.target.value))}

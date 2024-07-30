@@ -52,7 +52,7 @@ function Portfolio() {
 function Item({ item }) {
   return (
     <li className="list-images">
-      <img src={item.image} width="500px" alt={item.name} />
+      <img className="images" src={item.image} width="500px" alt={item.name} />
       {/* <h4> Catalogue {item.name}</h4> */}
       <button>
         <a href="#">Book a session</a>

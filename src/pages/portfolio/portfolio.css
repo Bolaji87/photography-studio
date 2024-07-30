@@ -28,3 +28,34 @@
   object-fit: cover;
   border-radius: 10px;
 }
+.images:nth-child(3) {
+  object-fit: fill;
+  width: 400px;
+  height: 400px;
+
+  border-radius: 10px;
+}
+.list-images button {
+  height: 30px;
+  width: 400px;
+  border: none;
+  padding: 6px;
+  font-size: 1rem;
+
+  background-color: rgb(117, 30, 30);
+  border-radius: 8px;
+}
+.list-images button a {
+  color: rgb(255, 255, 255);
+}
+.list-images button:hover {
+  height: 30px;
+  width: 400px;
+  border: none;
+  padding: 6px;
+  font-size: 1rem;
+
+  background-color: rgb(116, 84, 84);
+
+  border-radius: 8px;
+}

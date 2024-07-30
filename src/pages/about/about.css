@@ -9,9 +9,17 @@
 }
 .about-header h1 {
   text-transform: uppercase;
+  color: rgb(66, 77, 48);
+  font-weight: bold;
 }
 .about-header p {
   line-height: 1.5;
+}
+.about-header p strong {
+  color: rgb(66, 77, 48);
+}
+.about-header p em {
+  color: rgb(66, 77, 48);
 }
 .about-philosophy {
   margin-top: -10px;
@@ -20,7 +28,12 @@
   justify-content: center;
   align-items: center;
 }
+.about-philosophy h2 {
+  color: rgb(66, 77, 48);
+  font-weight: bolder;
+}
 #team {
+  color: rgb(66, 77, 48);
   margin-top: 4px;
   text-align: center;
   font-size: 22px;
@@ -123,7 +136,7 @@
   font-size: 21px;
   font-weight: bolder;
   text-align: center;
-  color: rgb(190, 224, 127);
+  color: rgb(66, 77, 48);
   margin-bottom: 0;
 }
 .testimony {
@@ -138,17 +151,27 @@
   font-size: 21px;
   font-weight: bolder;
   text-align: center;
-  color: rgb(190, 224, 127);
+  color: rgb(66, 77, 48);
   margin-bottom: 0;
+}
+.testimony div strong {
+  color: rgb(66, 77, 48);
 }
 .get-in-touch h2 {
   text-align: center;
   font-size: 22px;
   font-weight: bolder;
-  color: maroon;
+
+  color: rgb(66, 77, 48);
 }
 #contact-on-ig {
-  color: blue;
+  display: inline-block;
+  font-style: italic;
+  color: rgb(7, 43, 250);
+  font-size: 18px;
+}
+#contact-on-ig:hover {
+  color: rgb(250, 7, 7);
   display: inline-block;
   font-style: italic;
   font-size: 18px;

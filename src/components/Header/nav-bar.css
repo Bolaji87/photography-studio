@@ -49,6 +49,7 @@
 }
 .nav-bar .navbar-navlinks li:hover {
   background-color: teal;
+  background-color: rgb(117, 30, 30);
 
   color: #f7ebeb;
   padding: 10px;

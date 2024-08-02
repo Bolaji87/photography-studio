@@ -3,6 +3,7 @@ import Portfolio from "./pages/portfolio/Portfolio";
 import About from "./pages/about/About.jsx";
 import Services from "./pages/services/Services.jsx";
 import Login from "./pages/login/Login.jsx";
+import PageNotFound from "./pages/pagenotfound/PageNotFound.jsx";
 
 export const appRoutes = [
   {
@@ -26,5 +27,9 @@ export const appRoutes = [
   {
     path: "login",
     component: Login,
+  },
+  {
+    path: "*",
+    component: PageNotFound,
   },
 ];

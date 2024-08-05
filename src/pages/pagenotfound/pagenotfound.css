@@ -1,0 +1,10 @@
+.notfound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.notfound h1 {
+  font-size: 28px;
+  color: #8d5f5f;
+}

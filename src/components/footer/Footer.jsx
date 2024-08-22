@@ -4,7 +4,10 @@ import "./footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <p>&copy; 2024 slacrane shot it. All Rights Reserved.</p>
+      <p>
+        &copy; {new Date().getFullYear()} copyright slacrane shot it. All Rights
+        Reserved.
+      </p>
     </footer>
   );
 }
